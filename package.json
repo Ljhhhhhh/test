@@ -1,0 +1,34 @@
+{
+  "name": "component-lib",
+  "version": "0.0.3",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/my-components.umd.js",
+  "module": "./dist/my-components.js",
+  "exports": {
+    ".": {
+      "import": "./dist/my-components.js",
+      "require": "./dist/my-components.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "author": "LuJieHui",
+  "publishConfig": {
+    "registry": "http://localhost:4873",
+    "access": "public"
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "sass": "^1.83.4",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7",
+    "vite-plugin-dts": "^4.5.0",
+    "vue": "^3.5.13"
+  }
+}
